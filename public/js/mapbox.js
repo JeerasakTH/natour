@@ -1,4 +1,4 @@
-export const displayMap = (location) => {
+export const displayMap = (locations) => {
   mapboxgl.accessToken =
     'pk.eyJ1IjoiamVlcmFzYWtnMDEiLCJhIjoiY2w2NGtvcWltMGo0aDNqcGd6dm0xbHE0bCJ9.IudwiuiSeyhIwsIwUqmgOQ';
 
@@ -6,9 +6,9 @@ export const displayMap = (location) => {
     container: 'map',
     style: 'mapbox://styles/jeerasakg01/cl64lcx8f001s15nv9dbyeucp',
     scrollZoom: false,
-    //   center: [-118.113491, 34.111745],
-    //   zoom: 10,
-    //   interactive: false,
+    // center: [-118.113491, 34.111745],
+    // zoom: 10,
+    // interactive: false
   });
 
   const bounds = new mapboxgl.LngLatBounds();
