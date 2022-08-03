@@ -73,7 +73,7 @@ const sendErrorProd = (err, req, res) => {
   }
   // B) Programing or other unknown error: don't leak error details
   // 1. Log error
-  console.log(err.isOperational);
+  // console.log(err.isOperational);
   console.error('ERROR', err);
 
   // 2. Send generic message

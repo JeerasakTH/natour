@@ -50,7 +50,7 @@ const filterObj = (obj, ...allowedFields) => {
   Object.keys(obj).forEach((el) => {
     if (allowedFields.includes(el)) newObj[el] = obj[el];
   });
-  console.log(newObj);
+  // console.log(newObj);
   return newObj;
 };
 
